@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giphy-project</title>
+    <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
+</head>
+<body>
+    <main class="main">
+        <section class="search">
+            <h1 class="search__title">Искать GIF картинки</h1>
+            <form class="search__form">
+                <input type="text" class="search__keyword" placeholder="Введите слово">
+                <button class="search__button">Искать</button>
+            </form>
+        </section>
+        <section class="section">
+            <span class="loader">
+                <span class="loader__inside"></span>
+            </span>
+            <p class="section-error"></p>
+            <div class="section__result"></div>
+        </section>
+        
+    </main>
+<script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+</body>
+</html>
